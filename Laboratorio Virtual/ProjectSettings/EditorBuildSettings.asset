@@ -9,12 +9,21 @@ EditorBuildSettings:
     path: Assets/Scenes/menu.unity
     guid: 8138e5ca4350bd74f9777f61212feca1
   - enabled: 1
-    path: Assets/Scenes/visualizacao.unity
+    path: Assets/Scenes/fase1.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/fase2.unity
+    guid: c84f38f6d79bc194bbfe4e7374cefe63
+  - enabled: 1
+    path: Assets/Scenes/fase3.unity
+    guid: 11fcb6f1523965347ad6846f8e8422e1
   - enabled: 0
-    path: Assets/Clean Settings UI/Clean Settings UI.unity
-    guid: c161cbe1d02774c6a988b00b2d8baadf
+    path: Assets/__DELETED_GUID_Trash/07ff20807747e9e4295d3b3beb76c668
+    guid: 07ff20807747e9e4295d3b3beb76c668
   - enabled: 0
     path: Assets/KD_ScienceFlasks/ExampleScene/ExampleScene.unity
     guid: 0cdc50907d74a5947b68e0ec1defa5d1
+  - enabled: 0
+    path: Assets/Clean Settings UI/Clean Settings UI.unity
+    guid: c161cbe1d02774c6a988b00b2d8baadf
   m_configObjects: {}

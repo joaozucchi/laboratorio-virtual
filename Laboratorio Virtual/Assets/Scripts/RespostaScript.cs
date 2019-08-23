@@ -10,6 +10,5 @@ public class RespostaScript : MonoBehaviour
     {
         button.SetActive(true);
     }
-
     
 }

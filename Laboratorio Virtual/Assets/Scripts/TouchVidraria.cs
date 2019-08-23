@@ -6,7 +6,8 @@ public class TouchVidraria : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public GameObject botaoCorreto,botaoIncorreto;
+    public GameObject botaoCorreto, botaoIncorreto;
+    public string VidrariaCorreta;
     string vidraria;
     void Start()
     {
@@ -23,17 +24,14 @@ public class TouchVidraria : MonoBehaviour
             if(Physics.Raycast(ray, out Hit))
             {
                 vidraria = Hit.transform.name;
-                switch (vidraria)
-                {
-                    case "bequer":
-                        botaoCorreto.SetActive(true);
-                        botaoIncorreto.SetActive(false);
-                        break;
 
-                    case "erlenmeyer":
-                        botaoIncorreto.SetActive(true);
-                        botaoCorreto.SetActive(false);
-                        break;
+                if (Equals(vidraria, VidrariaCorreta))
+                {
+                    botaoCorreto.SetActive(true);
+                }
+                else
+                {
+                    botaoIncorreto.SetActive(true);
                 }
             }
         }
