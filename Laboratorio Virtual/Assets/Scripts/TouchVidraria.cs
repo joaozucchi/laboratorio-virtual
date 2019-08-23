@@ -28,10 +28,12 @@ public class TouchVidraria : MonoBehaviour
                 if (Equals(vidraria, VidrariaCorreta))
                 {
                     botaoCorreto.SetActive(true);
+                    botaoIncorreto.SetActive(false);
                 }
                 else
                 {
                     botaoIncorreto.SetActive(true);
+                    botaoCorreto.SetActive(false);
                 }
             }
         }

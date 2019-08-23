@@ -7,10 +7,11 @@ using TMPro;
 
 public class Pontuar : MonoBehaviour
 {
-    public Text texto;
+    public TextMeshProUGUI texto;
     public void PontuarQuestao()
     {
         PlayerPrefs.SetInt("Pontos", PlayerPrefs.GetInt("Pontos") + 1);
+        Debug.Log("ESSE EH O VALOR: "+PlayerPrefs.GetInt("Pontos"));
     }
 
     public void ZerarPontuacao()
@@ -20,7 +21,6 @@ public class Pontuar : MonoBehaviour
     
     public void MostrarPlacar()
     {
-        texto.text = "Você acertou" + PlayerPrefs.GetInt("Pontos") + " de 3 questões!";
+        texto.text = "Você acertou " + PlayerPrefs.GetInt("Pontos") + " de 3 questões!";
     }
-
 }
