@@ -178,7 +178,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "Desenvolvedores: Jo\xE3o Herc\xEDlio, Larson Kremer, Victor Augusto, Bruno
-    Rog\xE9rio\n\nvers\xE3o: 0.2\n"
+    Rog\xE9rio\n\nvers\xE3o: 0.3\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 23d821d378cdeb54f861a4ec87a37580, type: 2}
   m_sharedMaterial: {fileID: -8160538997346073978, guid: 23d821d378cdeb54f861a4ec87a37580,
@@ -1158,6 +1158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 153ab6b2c253d1d4aad108e2de2e3bfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  texto: {fileID: 0}
 --- !u!1 &1642319672
 GameObject:
   m_ObjectHideFlags: 0
