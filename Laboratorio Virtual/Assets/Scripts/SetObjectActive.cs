@@ -9,11 +9,9 @@ public class SetObjectActive : MonoBehaviour
 
     public void SetObjecActive()
     {
-        int i = 0;
-        do
+        for (int i = 0; i < objeto.Length; i++)
         {
             objeto[i].SetActive(boolValue[i]);
-            i++;
-        } while (objeto[i] != null);
+        }
     }
 }

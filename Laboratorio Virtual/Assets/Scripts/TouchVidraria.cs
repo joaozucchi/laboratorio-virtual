@@ -11,22 +11,40 @@ public class TouchVidraria : MonoBehaviour
     string vidraria;
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-       if(Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
+        if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
             RaycastHit Hit;
-            if(Physics.Raycast(ray, out Hit))
+            if (Physics.Raycast(ray, out Hit))
             {
-                
+
                 vidraria = Hit.transform.name;
                 GameObject objeto = GameObject.FindGameObjectWithTag(vidraria);
-                seta.transform.position = new Vector3(objeto.transform.position.x, seta.transform.position.y, objeto.transform.position.z);
+                seta.transform.parent = objeto.transform;
+                switch (vidraria)
+                {
+                    case "bequer":
+                        seta.transform.localPosition = new Vector3(0, 0.15f, 0);
+                        break;
+
+                    case "erlenmeyer":
+                        seta.transform.localPosition = new Vector3(0, 0.19f, 0);
+                        break;
+
+                    case "balaodefundoredondo":
+                        seta.transform.localPosition = new Vector3(0, 0.15f, 0);
+                        break;
+
+                    case "provetagraduada":
+                        seta.transform.localPosition = new Vector3(0, 0.57f, 0);
+                        break;
+                }
                 seta.SetActive(true);
 
                 if (Equals(vidraria, VidrariaCorreta))
@@ -40,28 +58,31 @@ public class TouchVidraria : MonoBehaviour
                     botaoCorreto.SetActive(false);
                 }
             }
+
         }
     }
+    //public void teste()
+    //{
+    //    string v = "BalaodefundoRedondo";
+    //    GameObject objeto = GameObject.FindGameObjectWithTag(v);
+    //    seta.transform.parent = objeto.transform;
+    //    seta.transform.localPosition = new Vector3(0, 0.15f, 0);
+    //    seta.SetActive(true);
 
-    /*public void teste()
-    {
-        string v = "BalaodefundoRedondo";
-        GameObject objeto = GameObject.FindGameObjectWithTag(v);
-        seta.transform.position = new Vector3(objeto.transform.position.x, seta.transform.position.y, objeto.transform.position.z);
-        seta.SetActive(true);
-
-        if (Equals(v, VidrariaCorreta))
-        {
-            botaoCorreto.SetActive(true);
-            botaoIncorreto.SetActive(false);
-        }
-        else
-        {
-            botaoIncorreto.SetActive(true);
-            botaoCorreto.SetActive(false);
-        }
-    }*/
-
-
+    //    if (Equals(v, VidrariaCorreta))
+    //    {
+    //        botaoCorreto.SetActive(true);
+    //        botaoIncorreto.SetActive(false);
+    //    }
+    //    else
+    //    {
+    //        botaoIncorreto.SetActive(true);
+    //        botaoCorreto.SetActive(false);
+    //    }
+    //}
 }
+
+
+
+
 //https://www.youtube.com/watch?v=hi_KDpC1nzk
