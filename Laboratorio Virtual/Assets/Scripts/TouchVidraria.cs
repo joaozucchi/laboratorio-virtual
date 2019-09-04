@@ -38,7 +38,8 @@ public class TouchVidraria : MonoBehaviour
                         break;
 
                     case "balaodefundoredondo":
-                        seta.transform.localPosition = new Vector3(0, 0.15f, 0);
+                        Debug.Log("BALAO SELECIONADO");
+                        seta.transform.localPosition = new Vector3(0, 1.15f, 0);
                         break;
 
                     case "provetagraduada":
@@ -47,42 +48,23 @@ public class TouchVidraria : MonoBehaviour
                 }
                 seta.SetActive(true);
 
+                Debug.Log(vidraria+"  "+VidrariaCorreta);
                 if (Equals(vidraria, VidrariaCorreta))
                 {
                     botaoCorreto.SetActive(true);
                     botaoIncorreto.SetActive(false);
+                    Debug.Log("CORRETO");
                 }
                 else
                 {
                     botaoIncorreto.SetActive(true);
                     botaoCorreto.SetActive(false);
+                    Debug.Log("INCORRETO");
                 }
+
             }
 
         }
     }
-    //public void teste()
-    //{
-    //    string v = "BalaodefundoRedondo";
-    //    GameObject objeto = GameObject.FindGameObjectWithTag(v);
-    //    seta.transform.parent = objeto.transform;
-    //    seta.transform.localPosition = new Vector3(0, 0.15f, 0);
-    //    seta.SetActive(true);
-
-    //    if (Equals(v, VidrariaCorreta))
-    //    {
-    //        botaoCorreto.SetActive(true);
-    //        botaoIncorreto.SetActive(false);
-    //    }
-    //    else
-    //    {
-    //        botaoIncorreto.SetActive(true);
-    //        botaoCorreto.SetActive(false);
-    //    }
-    //}
 }
-
-
-
-
 //https://www.youtube.com/watch?v=hi_KDpC1nzk
