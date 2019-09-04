@@ -38,7 +38,6 @@ public class TouchVidraria : MonoBehaviour
                         break;
 
                     case "balaodefundoredondo":
-                        Debug.Log("BALAO SELECIONADO");
                         seta.transform.localPosition = new Vector3(0, 1.15f, 0);
                         break;
 
@@ -48,18 +47,15 @@ public class TouchVidraria : MonoBehaviour
                 }
                 seta.SetActive(true);
 
-                Debug.Log(vidraria+"  "+VidrariaCorreta);
                 if (Equals(vidraria, VidrariaCorreta))
                 {
                     botaoCorreto.SetActive(true);
                     botaoIncorreto.SetActive(false);
-                    Debug.Log("CORRETO");
                 }
                 else
                 {
                     botaoIncorreto.SetActive(true);
                     botaoCorreto.SetActive(false);
-                    Debug.Log("INCORRETO");
                 }
 
             }
