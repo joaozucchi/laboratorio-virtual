@@ -38,20 +38,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8267858812403032069}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 7ff374f27c92f9446b6f4c64c694e279,
-        type: 3}
-      propertyPath: m_Name
-      value: PlacaDePetri
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 7ff374f27c92f9446b6f4c64c694e279,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.169
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 7ff374f27c92f9446b6f4c64c694e279,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.090968
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 7ff374f27c92f9446b6f4c64c694e279,
         type: 3}
@@ -112,6 +107,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 25.508259
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 7ff374f27c92f9446b6f4c64c694e279,
+        type: 3}
+      propertyPath: m_Name
+      value: PlacaDePetri
       objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: 7ff374f27c92f9446b6f4c64c694e279,
         type: 3}

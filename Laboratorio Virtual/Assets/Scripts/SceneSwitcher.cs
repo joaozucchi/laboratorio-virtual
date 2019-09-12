@@ -18,4 +18,9 @@ public class SceneSwitcher : MonoBehaviour
             SceneManager.LoadScene(scene);
         }
     }
+
+    public void VisualizacaoScene()
+    {
+        SceneManager.LoadScene("visualizacao");
+    }
 }
