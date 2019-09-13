@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4234109884947750401}
+  - component: {fileID: 7177460438320318775}
   m_Layer: 0
   m_Name: balaovolumetrico
   m_TagString: Untagged
@@ -23,14 +24,27 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4234109884947750402}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0.70611125, z: -0, w: 0.708101}
+  m_LocalPosition: {x: 0.00000004457772, y: 0, z: -0.000000044703313}
   m_LocalScale: {x: 0.61822, y: 0.61822, z: 0.61822}
   m_Children:
   - {fileID: 9203141363215145930}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -89.839005, z: 0}
+--- !u!65 &7177460438320318775
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4234109884947750402}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6063482, y: 1.6793683, z: 0.6317434}
+  m_Center: {x: -0.00000002410333, y: 0.5301611, z: 0.000000012051667}
 --- !u!1001 &4234109884636672208
 PrefabInstance:
   m_ObjectHideFlags: 0

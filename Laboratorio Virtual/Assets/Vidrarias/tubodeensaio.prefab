@@ -9,9 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 695348347716615542}
+  - component: {fileID: 7110647426708494651}
   m_Layer: 0
   m_Name: tubodeensaio
-  m_TagString: Untagged
+  m_TagString: tubodeensaio
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24,13 +25,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7403046824531681799}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.10178387, y: 0.2626635, z: 0.28048673}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8730499360079386150}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &7110647426708494651
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7403046824531681799}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.19292769, y: 0.7972932, z: 0.15157418}
+  m_Center: {x: 0.020645976, y: 0.30030596, z: 0.018770417}
 --- !u!1001 &4346609329610636604
 PrefabInstance:
   m_ObjectHideFlags: 0

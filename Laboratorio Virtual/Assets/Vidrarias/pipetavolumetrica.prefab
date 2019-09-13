@@ -9,9 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1636185525450977137}
+  - component: {fileID: 3193936478925254275}
   m_Layer: 0
   m_Name: pipetavolumetrica
-  m_TagString: Untagged
+  m_TagString: pipetavolumetrica
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23,14 +24,27 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2551691650578782743}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0.7051415, z: -0, w: 0.7090666}
+  m_LocalPosition: {x: 0.0026772593, y: 0, z: -0.002692165}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7336726926117769590}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -89.68201, z: 0}
+--- !u!65 &3193936478925254275
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2551691650578782743}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1277056, y: 1.0565375, z: 0.09538441}
+  m_Center: {x: 0.0026922077, y: -0.028268754, z: 0.002692338}
 --- !u!1001 &2354255098971077228
 PrefabInstance:
   m_ObjectHideFlags: 0

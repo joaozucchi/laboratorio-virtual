@@ -8,6 +8,13 @@ TagManager:
   - erlenmeyer
   - balaodefundoredondo
   - provetagraduada
+  - funildebuchner
+  - tubodeensaio
+  - balaovolumetrico
+  - pipetadepasteur
+  - pipetagraduada
+  - pipetavolumetrica
+  - placadepetri
   layers:
   - Default
   - TransparentFX

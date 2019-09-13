@@ -8,10 +8,10 @@ public class TouchVidraria : MonoBehaviour
     public GameObject botaoCorreto, botaoIncorreto, seta;
     public string VidrariaCorreta;
     string vidraria;
-    void Start()
-    {
+    public string[] vidrarias;
+    public float[] alturaVidrarias;
 
-    }
+
     void Update()
     {
         if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
@@ -23,25 +23,15 @@ public class TouchVidraria : MonoBehaviour
                 vidraria = Hit.transform.name;
                 GameObject objeto = GameObject.FindGameObjectWithTag(vidraria);
                 seta.transform.parent = objeto.transform;
-                switch (vidraria)
+
+                for (int i = 0; i < vidrarias.Length; i++)
                 {
-                    case "bequer":
-                        seta.transform.localPosition = new Vector3(0, 0.15f, 0);
-                        break;
-
-                    case "erlenmeyer":
-                        seta.transform.localPosition = new Vector3(0, 0.19f, 0);
-                        break;
-
-                    case "balaodefundoredondo":
-                        seta.transform.localPosition = new Vector3(0, 1.15f, 0);
-                        break;
-
-                    case "provetagraduada":
-                        seta.transform.localPosition = new Vector3(0, 0.57f, 0);
-                        break;
+                    if (vidraria.Equals(vidrarias[i]))
+                    {
+                        seta.transform.localPosition = new Vector3(0, alturaVidrarias[i], 0);
+                        seta.SetActive(true);
+                    }
                 }
-                seta.SetActive(true);
 
                 if (Equals(vidraria, VidrariaCorreta))
                 {

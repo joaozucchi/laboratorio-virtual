@@ -9,9 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 139509832821565192}
+  - component: {fileID: 7730473588919709796}
   m_Layer: 0
   m_Name: pipetadepasteur
-  m_TagString: Untagged
+  m_TagString: pipetadepasteur
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23,14 +24,27 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4137611825623442026}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0.7041384, z: -0, w: 0.7100628}
+  m_LocalPosition: {x: 0.0018540701, y: 0, z: -0.0018696727}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4889725058507408717}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -89.520004, z: 0}
+--- !u!65 &7730473588919709796
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4137611825623442026}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1286928, y: 0.70586026, z: 0.09221602}
+  m_Center: {x: 0.0018697381, y: -0.30541128, z: -0.0008549541}
 --- !u!1001 &477803524532514391
 PrefabInstance:
   m_ObjectHideFlags: 0
