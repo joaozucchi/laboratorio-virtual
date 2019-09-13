@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class TouchVidraria : MonoBehaviour
 {
-    // Start is called before the first frame update
 
     public GameObject botaoCorreto, botaoIncorreto, seta;
     public string VidrariaCorreta;
@@ -13,8 +12,6 @@ public class TouchVidraria : MonoBehaviour
     {
 
     }
-
-    // Update is called once per frame
     void Update()
     {
         if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
@@ -23,7 +20,6 @@ public class TouchVidraria : MonoBehaviour
             RaycastHit Hit;
             if (Physics.Raycast(ray, out Hit))
             {
-
                 vidraria = Hit.transform.name;
                 GameObject objeto = GameObject.FindGameObjectWithTag(vidraria);
                 seta.transform.parent = objeto.transform;
@@ -57,9 +53,7 @@ public class TouchVidraria : MonoBehaviour
                     botaoIncorreto.SetActive(true);
                     botaoCorreto.SetActive(false);
                 }
-
             }
-
         }
     }
 }
