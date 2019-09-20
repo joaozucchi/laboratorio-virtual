@@ -15,6 +15,7 @@ TagManager:
   - pipetagraduada
   - pipetavolumetrica
   - placadepetri
+  - funilsimples
   layers:
   - Default
   - TransparentFX

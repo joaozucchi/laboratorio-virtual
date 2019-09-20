@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6258651392033030176}
   - component: {fileID: 9136901877374739999}
   m_Layer: 0
-  m_Name: bureta 1
+  m_Name: bureta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -303,7 +303,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7609185879540407787}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0.042682, y: 0.028, z: 0.014233}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.12786072, y: 0.12786072, z: 0.12786072}
   m_Children:
   - {fileID: 2885290030887146294}
