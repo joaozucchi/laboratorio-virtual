@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class TouchVidraria : MonoBehaviour
 {
@@ -8,9 +10,15 @@ public class TouchVidraria : MonoBehaviour
     public GameObject botaoCorreto, botaoIncorreto, seta;
     public string VidrariaCorreta;
     string vidraria;
+    public string pergunta;
+    public TextMeshProUGUI perguntaText;
     public string[] vidrarias;
     public float[] alturaVidrarias;
 
+    private void Start()
+    {
+        perguntaText.text = pergunta;
+    }
 
     void Update()
     {

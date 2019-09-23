@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4252620592858453025}
   m_Layer: 0
   m_Name: placadepetri
-  m_TagString: Untagged
+  m_TagString: placadepetri
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3015935859511800848}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.751, y: -0.099, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.49855, y: 0.49855, z: 0.49855}
   m_Children:
   - {fileID: 763509964181349098}

@@ -38,8 +38,8 @@ public class Pontuar : MonoBehaviour
                 a = "Incorreta";
             }
             int x = i + 1;
-            texto.text += "Questão" + x + ": " + a +"<br>";
+            texto.text += "Questão " + x + ": " + a +"<br>";
         }
-        texto.text += "Você acertou " + PlayerPrefs.GetInt("Pontos") + " de 3 questões! <br>";
+        texto.text += "Você acertou " + PlayerPrefs.GetInt("Pontos") + " de 7 questões! <br>";
     }
 }

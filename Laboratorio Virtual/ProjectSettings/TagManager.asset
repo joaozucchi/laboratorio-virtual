@@ -16,6 +16,8 @@ TagManager:
   - pipetavolumetrica
   - placadepetri
   - funilsimples
+  - kitassato
+  - bureta
   layers:
   - Default
   - TransparentFX

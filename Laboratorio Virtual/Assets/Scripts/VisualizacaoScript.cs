@@ -9,7 +9,8 @@ public class VisualizacaoScript : MonoBehaviour
 
     public GameObject[] vidrarias;
     public string[] nomeVidrarias;
-    public TextMeshProUGUI texto;
+    public string[] descricaoVidrarias;
+    public TextMeshProUGUI texto, descricao;
     public Button botaoAnterior, botaoProximo;
     int x = 0;
 
@@ -21,6 +22,7 @@ public class VisualizacaoScript : MonoBehaviour
             x++;
             vidrarias[x].SetActive(true);
             texto.text = nomeVidrarias[x];
+            descricao.text = descricaoVidrarias[x];
             botaoAnterior.interactable = true;
         }
         
@@ -36,6 +38,7 @@ public class VisualizacaoScript : MonoBehaviour
         x--;
         vidrarias[x].SetActive(true);
         texto.text = nomeVidrarias[x];
+        descricao.text = descricaoVidrarias[x];
         botaoProximo.interactable = true;
 
         if(x == 0)

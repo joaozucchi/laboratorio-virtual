@@ -47,6 +47,8 @@ MonoBehaviour:
   botaoIncorreto: {fileID: 0}
   seta: {fileID: 0}
   VidrariaCorreta: bequer
+  pergunta: 
+  perguntaText: {fileID: 0}
   vidrarias:
   - bequer
   - erlenmeyer
