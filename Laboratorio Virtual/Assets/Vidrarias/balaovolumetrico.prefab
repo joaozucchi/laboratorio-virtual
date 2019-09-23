@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4234109884947750402
+--- !u!1 &3257061058293037464
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4234109884947750401}
-  - component: {fileID: 7177460438320318775}
+  - component: {fileID: 3764603985619941484}
+  - component: {fileID: 2656596707002679579}
   m_Layer: 0
   m_Name: balaovolumetrico
   m_TagString: Untagged
@@ -17,41 +17,46 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4234109884947750401
+--- !u!4 &3764603985619941484
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4234109884947750402}
-  m_LocalRotation: {x: -0, y: -0.70611125, z: -0, w: 0.708101}
-  m_LocalPosition: {x: 0.00000004457772, y: 0, z: -0.000000044703313}
-  m_LocalScale: {x: 0.61822, y: 0.61822, z: 0.61822}
+  m_GameObject: {fileID: 3257061058293037464}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 9203141363215145930}
+  - {fileID: 5439799682530318236}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -89.839005, z: 0}
---- !u!65 &7177460438320318775
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2656596707002679579
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4234109884947750402}
+  m_GameObject: {fileID: 3257061058293037464}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.6063482, y: 1.6793683, z: 0.6317434}
-  m_Center: {x: -0.00000002410333, y: 0.5301611, z: 0.000000012051667}
---- !u!1001 &4234109884636672208
+  m_Size: {x: 0.42763448, y: 1.0780499, z: 0.4239175}
+  m_Center: {x: 0.003716636, y: 0.53705734, z: 0.0018580914}
+--- !u!1001 &1010134749632085126
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 4234109884947750401}
+    m_TransformParent: {fileID: 3764603985619941484}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: e58a0f013b81c53438bb4167e0ad212b,
+        type: 3}
+      propertyPath: m_Name
+      value: BalaoVolumetrico
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e58a0f013b81c53438bb4167e0ad212b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -60,7 +65,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: e58a0f013b81c53438bb4167e0ad212b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.202
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e58a0f013b81c53438bb4167e0ad212b,
         type: 3}
@@ -70,17 +75,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: e58a0f013b81c53438bb4167e0ad212b,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e58a0f013b81c53438bb4167e0ad212b,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7069834
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e58a0f013b81c53438bb4167e0ad212b,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.7072302
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e58a0f013b81c53438bb4167e0ad212b,
         type: 3}
@@ -95,7 +100,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: e58a0f013b81c53438bb4167e0ad212b,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -89.98
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e58a0f013b81c53438bb4167e0ad212b,
         type: 3}
@@ -110,33 +115,28 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: e58a0f013b81c53438bb4167e0ad212b,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 30.78925
+      value: 19.927217
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e58a0f013b81c53438bb4167e0ad212b,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 30.789238
+      value: 19.92721
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e58a0f013b81c53438bb4167e0ad212b,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 30.789238
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: e58a0f013b81c53438bb4167e0ad212b,
-        type: 3}
-      propertyPath: m_Name
-      value: BalaoVolumetrico
+      value: 19.92721
       objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: e58a0f013b81c53438bb4167e0ad212b,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a0d7e311c6a741f4693d5b6bda823f49, type: 2}
+      objectReference: {fileID: 2100000, guid: e8224de37ac1ed347a000b6ecb538131, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e58a0f013b81c53438bb4167e0ad212b, type: 3}
---- !u!4 &9203141363215145930 stripped
+--- !u!4 &5439799682530318236 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: e58a0f013b81c53438bb4167e0ad212b,
     type: 3}
-  m_PrefabInstance: {fileID: 4234109884636672208}
+  m_PrefabInstance: {fileID: 1010134749632085126}
   m_PrefabAsset: {fileID: 0}
