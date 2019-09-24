@@ -64,6 +64,7 @@ MonoBehaviour:
   - kitassato
   - funilsimples
   - bureta
+  - cadinho
   alturaVidrarias:
   - 0.15
   - 0.19
@@ -79,3 +80,4 @@ MonoBehaviour:
   - 1.365
   - 1.24
   - 1.425
+  - 0.777
