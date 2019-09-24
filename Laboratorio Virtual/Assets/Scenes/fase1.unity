@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3454,9 +3454,10 @@ PrefabInstance:
     - target: {fileID: 3346796394818622227, guid: 19b12829e5fc99b45a8d784b9b077016,
         type: 3}
       propertyPath: pergunta
-      value: "O \xE9 uma vidraria semelhante ao b\xE9quer, entretanto permite a agita\xE7\xE3o
-        manual. \xC9 utilizado em titula\xE7\xF5es, aquecimento de l\xEDquidos e dissolu\xE7\xE3o
-        de subst\xE2ncias, entre outras fun\xE7\xF5es. "
+      value: "O ______ \xE9 uma vidraria semelhante ao b\xE9quer, entretanto permite
+        a agita\xE7\xE3o manual. \xC9 utilizado em titula\xE7\xF5es, aquecimento de
+        l\xEDquidos e dissolu\xE7\xE3o de subst\xE2ncias, entre outras fun\xE7\xF5es.
+        Seleciona a vidraria que completa a afirma\xE7\xE3o"
       objectReference: {fileID: 0}
     - target: {fileID: 3346796394818622227, guid: 19b12829e5fc99b45a8d784b9b077016,
         type: 3}
@@ -3491,7 +3492,7 @@ PrefabInstance:
     - target: {fileID: 3764603985619941484, guid: b3f5c186dfd0e4f4fa9b36c0dc47e526,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.032
+      value: 0.255
       objectReference: {fileID: 0}
     - target: {fileID: 3764603985619941484, guid: b3f5c186dfd0e4f4fa9b36c0dc47e526,
         type: 3}
