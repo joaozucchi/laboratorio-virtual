@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -910,6 +910,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &269033119
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'novo_marcadorMaterial
+
+    20528'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 36b47e1971bc45e7883f1c29c8e6fc0d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1001 &302070221
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1608,6 +1636,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9136901877374739999, guid: 12bb7a0ad6fd4de4f957ee6fb205ac17,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.20166087
+      objectReference: {fileID: 0}
+    - target: {fileID: 9136901877374739999, guid: 12bb7a0ad6fd4de4f957ee6fb205ac17,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.007811809
+      objectReference: {fileID: 0}
+    - target: {fileID: 9136901877374739999, guid: 12bb7a0ad6fd4de4f957ee6fb205ac17,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.00090808276
+      objectReference: {fileID: 0}
+    - target: {fileID: 9136901877374739999, guid: 12bb7a0ad6fd4de4f957ee6fb205ac17,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 0.16117987
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12bb7a0ad6fd4de4f957ee6fb205ac17, type: 3}
 --- !u!4 &407879574 stripped
@@ -2048,6 +2096,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9207586755287013373, guid: 5f8a3012afcfc664b9b541a08fb75b0f,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 0.15373336
+      objectReference: {fileID: 0}
+    - target: {fileID: 9207586755287013373, guid: 5f8a3012afcfc664b9b541a08fb75b0f,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.0008583503
+      objectReference: {fileID: 0}
+    - target: {fileID: 9207586755287013373, guid: 5f8a3012afcfc664b9b541a08fb75b0f,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.0018350335
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f8a3012afcfc664b9b541a08fb75b0f, type: 3}
@@ -2505,6 +2568,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6602298632600885604, guid: 3b05f4e7f71193e4795e80be83bde1f0,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 0.13692822
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602298632600885604, guid: 3b05f4e7f71193e4795e80be83bde1f0,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.0009553612
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602298632600885604, guid: 3b05f4e7f71193e4795e80be83bde1f0,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.017325832
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602298632600885604, guid: 3b05f4e7f71193e4795e80be83bde1f0,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.0015990884
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b05f4e7f71193e4795e80be83bde1f0, type: 3}
 --- !u!4 &777647456 stripped
@@ -2559,7 +2642,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 969032722}
+  - {fileID: 269033119}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2642,34 +2725,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &969032722
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'novo_marcadorMaterial
-
-    14526'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 36b47e1971bc45e7883f1c29c8e6fc0d, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1001 &1000196792
 PrefabInstance:
   m_ObjectHideFlags: 0

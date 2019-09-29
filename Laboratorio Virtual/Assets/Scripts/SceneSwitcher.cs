@@ -23,4 +23,9 @@ public class SceneSwitcher : MonoBehaviour
     {
         SceneManager.LoadScene("visualizacao");
     }
+
+    public void EspecialScene()
+    {
+        SceneManager.LoadScene("especial");
+    }
 }

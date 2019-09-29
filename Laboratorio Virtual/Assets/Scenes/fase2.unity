@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1912,7 +1912,7 @@ PrefabInstance:
     - target: {fileID: 1955259722124292982, guid: 0efc2dab9d959de4d9390d9eff870f90,
         type: 3}
       propertyPath: m_Name
-      value: Fase1
+      value: Fase2
       objectReference: {fileID: 0}
     - target: {fileID: 1955259722124292981, guid: 0efc2dab9d959de4d9390d9eff870f90,
         type: 3}
@@ -3757,7 +3757,7 @@ PrefabInstance:
         type: 3}
       propertyPath: pergunta
       value: "O _______ \xE9 usado, juntamente com ao Kitassato, em filtra\xE7\xF5es
-        \xE0 v\xE1cuo.  Selecione a vidraria que completa a afirma\xE7\xE3o."
+        \xE0 v\xE1cuo.  Selecione a vidraria que completa esta afirma\xE7\xE3o."
       objectReference: {fileID: 0}
     - target: {fileID: 3346796394818622227, guid: 19b12829e5fc99b45a8d784b9b077016,
         type: 3}
