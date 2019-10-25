@@ -7,13 +7,13 @@ using UnityEngine;
 public class User
 {
     public string userName;
-    public int userScore;
     public string localId;
-    
+    public string role;
+
     public User()
     {
-        userName = PlayerScores.playerName;
-        userScore = PlayerScores.playerScore;
-        localId = PlayerScores.localId;
+        userName = UserFirebase.nome;
+        localId = UserFirebase.localId;
+        role = UserFirebase.papel;
     }
 }
