@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "37764667858",
+    "firebase_url": "https://ar-lab-88ab2.firebaseio.com",
+    "project_id": "ar-lab-88ab2",
+    "storage_bucket": "ar-lab-88ab2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37764667858:android:4764a71216bc87cc17100b",
+        "android_client_info": {
+          "package_name": "com.joaohercilio.arlab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "37764667858-9kohgu4bquh1nj84rsh984s5klhdjq29.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADgTUd2X1zfqwJErX3BnJY10ogS12LNZU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "37764667858-9kohgu4bquh1nj84rsh984s5klhdjq29.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

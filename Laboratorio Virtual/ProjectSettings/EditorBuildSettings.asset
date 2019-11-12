@@ -44,4 +44,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/especial.unity
     guid: 7c131d30248eda74b940742f45003cbb
+  - enabled: 1
+    path: Assets/Scenes/criarQuestionario.unity
+    guid: ab3421e68663a054fa3b2ee987199f56
+  - enabled: 1
+    path: Assets/Scenes/faseTeste.unity
+    guid: e1a1a5a62eaaec14faf4a17bdc73822f
   m_configObjects: {}
