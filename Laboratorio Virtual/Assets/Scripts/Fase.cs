@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public static class Fase 
+public  class Fase : MonoBehaviour
 {
-    public static string pergunta, v1, v2, v3, vCorreta;
+    public  string pergunta, v1, v2, v3, vCorreta;
 }

@@ -13,11 +13,11 @@ public  class CriarFase : MonoBehaviour
 
     public void Criar()
     {
-        Fase.pergunta = perguntaText.text;
-        Fase.v1 = v1.text;
-        Fase.v2 = v2.text;
-        Fase.v3 = v3.text;
-        Fase.vCorreta = vCorreta.text;
-        EditorSceneManager.LoadScene("faseTeste");
+        //Fase.pergunta = perguntaText.text;
+        //Fase.v1 = v1.text;
+        //Fase.v2 = v2.text;
+        //Fase.v3 = v3.text;
+        //Fase.vCorreta = vCorreta.text;
+        //EditorSceneManager.LoadScene("faseTeste");
     }
 }
