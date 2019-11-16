@@ -31,7 +31,7 @@ public class Questionario : MonoBehaviour
             int closureIndex = i;
             buttonsAlternativas[closureIndex].onClick.AddListener(() => EscolherBotao(closureIndex));
         }
-            
+ 
         for (int i = 0; i < buttonsVidrarias.Length; i++)
         {
             int closureIndex = i;
@@ -65,6 +65,9 @@ public class Questionario : MonoBehaviour
             fases[i].v3 = "Clique para escolher";
             fases[i].vCorreta = "null";
         }
+        y = 0;
+        contador.text = "Questão 1";
+        anterior.interactable = false;
     }
 
     public void ProximaQuestao()
@@ -102,7 +105,6 @@ public class Questionario : MonoBehaviour
         if (t1.isOn)
         {
             fases[y].vCorreta = buttonText[0].text;
-            print("aaaaaa");
         }
         else if (t2.isOn)
         {
@@ -118,7 +120,7 @@ public class Questionario : MonoBehaviour
     {
         contador.text = "Questão " + y;
         pergunta.text = fases[y].pergunta;
-
+                                            
         buttonText[0].text = fases[y].v1;
         buttonText[1].text = fases[y].v2;
         buttonText[2].text = fases[y].v3;
