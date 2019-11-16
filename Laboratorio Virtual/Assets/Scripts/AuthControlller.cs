@@ -10,11 +10,59 @@ using Firebase.Unity.Editor;
 
 public class AuthControlller : MonoBehaviour
 {
-    public TextMeshProUGUI RegisteremailInput, RegisterpasswordInput, usernameInput;
-    public TextMeshProUGUI LoginemailInput, LoginpasswordInput;
+    public TextMeshProUGUI RegisteremailInput, RegisterpasswordInput, usernameInput, RegisterConsole;
+    public TextMeshProUGUI LoginemailInput, LoginpasswordInput, LoginConsole;
+
     public Toggle aluno, professor;
     private string uid, role = "aluno";
-    private DataBridge db;
+
+    private string DATA_URL = "https://ar-lab-88ab2.firebaseio.com/";
+    private User user;
+    private DatabaseReference databaseReference;
+
+    private void Start()
+    {
+        FirebaseApp.DefaultInstance.SetEditorDatabaseUrl(DATA_URL);
+        databaseReference = FirebaseDatabase.DefaultInstance.RootReference;
+    }
+    public void SaveUser(string username, string role, string uid)
+    {
+        user = new User(username, role);
+        print("aaa");
+        string jsonData = JsonUtility.ToJson(user);
+
+        databaseReference.Child("Users").Child(uid).SetRawJsonValueAsync(jsonData);
+    }
+    public void Load()
+    {
+        FirebaseDatabase.DefaultInstance.GetReferenceFromUrl(DATA_URL).GetValueAsync()
+            .ContinueWith((task => {
+
+                if (task.IsFaulted)
+                {
+                    print("faluted");
+                    return;
+                }
+                if (task.IsCanceled)
+                {
+                    print("canceled");
+                    return;
+                }
+                if (task.IsCompleted)
+                {
+                    DataSnapshot snapshot = task.Result;
+
+                    string userData = snapshot.GetRawJsonValue();
+
+                    foreach (var child in snapshot.Children)
+                    {
+                        string t = child.GetRawJsonValue();
+                        User extractedData = JsonUtility.FromJson<User>(t);
+                    }
+                }
+
+            }));
+    }
 
     public void Login(){
         FirebaseAuth.DefaultInstance.SignInWithEmailAndPasswordAsync(LoginemailInput.text, LoginpasswordInput.text)
@@ -59,9 +107,8 @@ public class AuthControlller : MonoBehaviour
             if(task.IsCompleted){
                 print("Registration COMPLETE");
                 uid = task.Result.UserId;
-                 print("aaaa");
-                db.SaveUser(usernameInput.text, role, uid);
-                db.Load();
+                print("aaaa");
+                SaveUser(usernameInput.text, role, uid);
             }
 
         }));
@@ -89,14 +136,21 @@ public class AuthControlller : MonoBehaviour
         switch (errorCode)
         {
             case AuthError.AccountExistsWithDifferentCredentials:
+                RegisterConsole.text = "Email já foi utilizado anteriormente";
                 break;
             case AuthError.MissingEmail:
+                RegisterConsole.text = "Insira o email";
+                LoginConsole.text = "Insira o email";
                 break;
             case AuthError.MissingPassword:
+                RegisterConsole.text = "Insira a senha";
+                LoginConsole.text = "Insira a senha";
                 break;
             case AuthError.WrongPassword:
+                LoginConsole.text = "Senha incorreta";
                 break;
             case AuthError.InvalidEmail:
+                RegisterConsole.text = "Email inválido";
                 break;
         }
     }
