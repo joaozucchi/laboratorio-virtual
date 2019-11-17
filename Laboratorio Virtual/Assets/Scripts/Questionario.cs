@@ -4,26 +4,35 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using System;
-
+using Firebase.Auth;
+using Firebase;
+using Firebase.Database;
+using Firebase.Unity.Editor;
+using UnityEngine.SceneManagement;
 public class Questionario : MonoBehaviour
 {   
-    Fase[] fases;
+    public Fase[] fases;
     public TextMeshProUGUI contador;
     public Text numeroQuestoes;
-    public TMP_InputField pergunta;
+    public TMP_InputField pergunta, nomeQuestionario;
     public GameObject lista;
     public Button[] buttonsVidrarias;
     public Button[] buttonsAlternativas;
     public Text[] buttonText;
-
     public Button anterior, proximo;
-    
     public Toggle t1, t2, t3;
     
     int x = 0;
-    int y = 0; 
+    int y = 0;
+
+    private string DATA_URL = "https://ar-lab-88ab2.firebaseio.com/";
+    private DatabaseReference databaseReference;
+
     private void Start()
     {
+        FirebaseApp.DefaultInstance.SetEditorDatabaseUrl(DATA_URL);
+        databaseReference = FirebaseDatabase.DefaultInstance.RootReference;
+
         MudaNumero();
         
         for (int i = 0; i < buttonsAlternativas.Length; i++)
@@ -64,6 +73,7 @@ public class Questionario : MonoBehaviour
             fases[i].v2 = "Clique para escolher";
             fases[i].v3 = "Clique para escolher";
             fases[i].vCorreta = "null";
+            fases[i].pergunta = " ";
         }
         y = 0;
         contador.text = "Questão 1";
@@ -137,5 +147,18 @@ public class Questionario : MonoBehaviour
         {
             t3.isOn = true;
         }
+    }
+    public void SaveQuestionario()
+    {
+        for (int i = 0; i < fases.Length; i++)
+        {  
+            string jsonData = JsonUtility.ToJson(fases[i]);
+            print(jsonData);
+            databaseReference.Child("Questionarios").Child(nomeQuestionario.text).Child("fase" + i).SetRawJsonValueAsync(jsonData);            
+        }
+        InfoQuestionario iq = new InfoQuestionario(FirebaseAuth.DefaultInstance.CurrentUser.UserId, nomeQuestionario.text, int.Parse(numeroQuestoes.text));
+        string jsonDataIq = JsonUtility.ToJson(iq);
+        databaseReference.Child("Questionarios").Child(nomeQuestionario.text).Child("info").SetRawJsonValueAsync(jsonDataIq);
+        print(iq);
     }
 }

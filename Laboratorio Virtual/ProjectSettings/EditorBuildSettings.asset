@@ -5,10 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
+    path: Assets/Scenes/entrar.unity
+    guid: 5802366287db7f64e920d524f65abdba
+  - enabled: 1
     path: Assets/Scenes/menuAluno.unity
     guid: 8138e5ca4350bd74f9777f61212feca1
-  - enabled: 0
+  - enabled: 1
+    path: Assets/Scenes/menuProfessor.unity
+    guid: 190306131968ecb44ad89a7f66f38d12
+  - enabled: 1
+    path: Assets/Scenes/criarQuestionario.unity
+    guid: ab3421e68663a054fa3b2ee987199f56
+  - enabled: 1
     path: Assets/Scenes/visualizacao.unity
     guid: 8e0a0692c5e82ea4aaa5e596c287ef67
   - enabled: 0
@@ -44,9 +53,6 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/especial.unity
     guid: 7c131d30248eda74b940742f45003cbb
-  - enabled: 1
-    path: Assets/Scenes/criarQuestionario.unity
-    guid: ab3421e68663a054fa3b2ee987199f56
   - enabled: 0
     path: Assets/Scenes/faseTeste.unity
     guid: e1a1a5a62eaaec14faf4a17bdc73822f
