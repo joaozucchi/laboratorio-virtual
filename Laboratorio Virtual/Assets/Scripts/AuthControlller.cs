@@ -15,7 +15,7 @@ public class AuthControlller : MonoBehaviour
 
     public Toggle aluno, professor;
     private string uid, role = "aluno", roleLida, userNameLido;
-
+    //aaaaaaaaaaaaaaa
     private string DATA_URL = "https://ar-lab-88ab2.firebaseio.com/";
     private User user;
     private DatabaseReference databaseReference;
